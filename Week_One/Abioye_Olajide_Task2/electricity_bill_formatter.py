@@ -8,4 +8,4 @@ cost_per_unit = float(input("Kindly provide the amount per unit: "))
 
 total_bill = units_consumed * cost_per_unit
 
-print(f"The neatly formatted receipt:\nCustomer\'s full name: {customer_fullname}\nUnits consumed(kWh): {units_consumed}\nCost per unit: #{cost_per_unit}\nThe total bill: #{total_bill:,}.")
+print(f"The neatly formatted receipt:\nCustomer\'s full name:\t\t{customer_fullname}\nUnits consumed(kWh):\t\t{units_consumed}\nCost per unit:\t\t\t#{cost_per_unit}\n______________________________________________\nTotal bill:\t\t\t#{total_bill:,}.")
