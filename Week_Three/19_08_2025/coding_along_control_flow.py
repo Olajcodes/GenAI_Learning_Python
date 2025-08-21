@@ -1,61 +1,61 @@
-# #   Conditional Statements
-# # if Statments
-# age = 20
-# if age >= 18:
-#     print("You are eligible to vote")
+#   Conditional Statements
+# if Statements
+age = 20
+if age >= 18:
+    print("You are eligible to vote")
 
-# # if-else Statement
-# wallet = 400
-# price = 500
+# if-else Statement
+wallet = 400
+price = 500
 
-# if wallet >= price:
-#     print("Purchase succcessful")
-# else:
-#     print("Insufficient balance")
+if wallet >= price:
+    print("Purchase successful")
+else:
+    print("Insufficient balance")
 
-# #  if-elif-else Statement
-# score = 85
-# if score >= 70:
-#     print("Grade A")
-# elif score >= 50:
-#     print("Grade B")
-# else:
-#     print("Grade C")
+#  if-elif-else Statement
+score = 85
+if score >= 70:
+    print("Grade A")
+elif score >= 50:
+    print("Grade B")
+else:
+    print("Grade C")
 
-# #  Nested if Statement
-# age = 19
-# citizen = True
+#  Nested if Statement
+age = 19
+citizen = True
 
-# if age >= 18:
-#     if citizen:
-#         print("You can vote")
-#     else:
-#         print("You must be a citizen to vote")
-# else:
-#     print("Too young to vote")
+if age >= 18:
+    if citizen:
+        print("You can vote")
+    else:
+        print("You must be a citizen to vote")
+else:
+    print("Too young to vote")
 
 
-# #  LOOPS
-# # for loop
-# # Iterates through each element in a LIST
-# fruits = ["apple", "banana", "orange"]
-# for fruits in fruits:
-#     print(f"I like {fruits}")
+#  LOOPS
+# for loop
+# Iterates through each element in a LIST
+fruits = ["apple", "banana", "orange"]
+for fruits in fruits:
+    print(f"I like {fruits}")
 
-# #  Iterates through each element in a TUPLE
-# coordinates = (0.34654, -0.48585, 0.57477)
-# for point in coordinates:
-#     print(f"Point: {point}")
+#  Iterates through each element in a TUPLE
+coordinates = (0.34654, -0.48585, 0.57477)
+for point in coordinates:
+    print(f"Point: {point}")
 
-# # Iterates through each element in a DICTIONARY. Remember that dictionaries have key-value pairs.
-# student ={"name": "Olajide", "age": 16, "grade": "A"}
-# for key, value in student.items():
-#     print(f"{key}: {value}")
+# Iterates through each element in a DICTIONARY. Remember that dictionaries have key-value pairs.
+student ={"name": "Olajide", "age": 16, "grade": "A"}
+for key, value in student.items():
+    print(f"{key}: {value}")
 
-# #  Iterates through each element in a STRING. Remember that strings are sequences of characters.
-# word = "PYTHON"
-# for c in word:
-#     print(c, end=" ")
+#  Iterates through each element in a STRING. Remember that strings are sequences of characters.
+word = "PYTHON"
+for c in word:
+    print(c, end=" ")
 
 
 #  WHILE LOOP
@@ -66,88 +66,88 @@ Let it keep printing until count is greater than 5
 Let the loop terminate when the condition is no longer true
 '''
 
-# count = 1
-# while count <= 5:
-#     print("Number:", count)
-#     count += 1
+count = 1
+while count <= 5:
+    print("Number:", count)
+    count += 1
 
-# #  Incrementing with "While"
-# num = 1
-# while num <= 10:
-#     print(num, end=" ")
-#     num += 1
+#  Incrementing with "While"
+num = 1
+while num <= 10:
+    print(num, end=" ")
+    num += 1
 
-# #  Decrementing with "While"
-# timer = 10
-# while timer > 0:
-#     print("Countdown:", timer)
-#     timer -= 1
+#  Decrementing with "While"
+timer = 10
+while timer > 0:
+    print("Countdown:", timer)
+    timer -= 1
 
-# password = " "
-# while password != "python123":
-#     password = input("Enter the password: ")
+password = " "
+while password != "python123":
+    password = input("Enter the password: ")
 
-# print("Access Granted")
-
-
-# #  Understanding while True
-# #  While True
-# #  Keep asking the user for a name until they type "exit".
-
-# while True:
-#     name = input("Enter your name (type 'exit' to quit): ")
-#     if name.lower() == "exit":
-#         print("Goodbye!")
-#         break
-#     print(f"Hello, {name}")
+print("Access Granted")
 
 
-# #  Loop Control Statements (break, continue, and pass)
-# #  break 
-# for num in range(1, 10):
-#     if num == 5:
-#         break
-#     print(num)
+#  Understanding while True
+#  While True
+#  Keep asking the user for a name until they type "exit".
+
+while True:
+    name = input("Enter your name (type 'exit' to quit): ")
+    if name.lower() == "exit":
+        print("Goodbye!")
+        break
+    print(f"Hello, {name}")
+
+
+#  Loop Control Statements (break, continue, and pass)
+#  break 
+for num in range(1, 10):
+    if num == 5:
+        break
+    print(num)
 
 #  continue
-# for num in range(1, 6):
-#     if num == 3:
-#         continue
-#     print(num)
+for num in range(1, 6):
+    if num == 3:
+        continue
+    print(num)
 
-# #  Pass
-# for num in range(1, 6):
-#     if num == 3:
-#         pass
-#     print(num)
+#  Pass
+for num in range(1, 6):
+    if num == 3:
+        pass
+    print(num)
 
-# #  Lets try while True again
-# while True:
-#     print("\nMenu:")
-#     print("1.  Say Hello")
-#     print("2.  Say Goodbye")
-#     print("3.  Exit")
+#  Lets try while True again
+while True:
+    print("\nMenu:")
+    print("1.  Say Hello")
+    print("2.  Say Goodbye")
+    print("3.  Exit")
 
-#     choice = input("Choose an option: ")
+    choice = input("Choose an option: ")
 
-#     if choice == "1":
-#         print("Hello")
-#     elif choice == "2":
-#         print("Goodbye")
-#     elif choice == "3":
-#         print("Exicting program...")
-#         break
-#     else:
-#         print("Invalid choice. Try again.")
+    if choice == "1":
+        print("Hello")
+    elif choice == "2":
+        print("Goodbye")
+    elif choice == "3":
+        print("Exiting program...")
+        break
+    else:
+        print("Invalid choice. Try again.")
 
 #  Try and use while True for validation
-# while True:
-#     age = input("Enter your age: ")
-#     if age.isdigit():
-#         print(f"Your age is {age}")
-#         break
-#     else:
-#         print("Invalid input. Please enter a number.")
+while True:
+    age = input("Enter your age: ")
+    if age.isdigit():
+        print(f"Your age is {age}")
+        break
+    else:
+        print("Invalid input. Please enter a number.")
 
 # Let's make a guess
 secret = "python"
@@ -160,6 +160,30 @@ while True:
     else:
         print("Wrong! Try again.")
 
-#  Do you remeber this?
+#  Do you remember this?
 
 balance = 1000
+
+while True:
+    print("\nATM Menu:")
+    print("1.   Check Balance")
+    print("2.   Withdraw")
+    print("3.   Exit")
+    
+    choice = input("Enter choice: ")
+    
+    if choice == "1":
+        print(f"Your balance is: {balance}")
+    elif choice == "2":
+        amount = int(input("Enter withdrawal amount: "))
+        if amount <= balance:
+            balance -= amount
+            print(f"Withdrawal successful. New balance: {balance}")
+        else:
+            print("Insufficient funds.")
+    elif choice == "3":
+        print("Thank you for using our ATM. Goodbye!")
+        break
+    else:
+        print("Invalid option. Try again.")
+
