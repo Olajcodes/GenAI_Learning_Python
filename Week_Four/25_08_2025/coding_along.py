@@ -89,12 +89,41 @@
 # greet("Class rep")
 # greet("Ridwan")
 
-#  return print() and yield()
-def greet(name):
-    return f"Hello", name
-    print("Hello", name)
+# #  return print() and yield()
+# def greet(name):
+#     # return f"Hello, {name}"
+#     print("Hello", name)
+
+# #  Function call
+# result = greet("Esther")
+
+# print("Result:", result)
+
+#  return
+# def add(a, b):
+#     return a + b
+# # Function call
+# result = add(4, 6)
+# print("The sum is:", result)
+
+#  yield
+# def count_up_to(n):
+#     i = 1
+#     while i <= n:
+#         yield i     # pause and return i
+#         i += 1
+
+# #  Using the generator
+# for number in count_up_to(5):
+#     print(number)
+
+# Types of Arguments
+# Positional Argumens
+def introduce(name, track):
+    print("My name is", name)
+    print("I am learning", track, ".")
 
 #  Function call
-result = greet("Esther")
+introduce("Olajide", "AI Engineering")      # Correct Order
 
-print("Result:", result)
+introduce("AI Engineering", "Olajide")      # Incorrect order, this will throw a semnatic error
