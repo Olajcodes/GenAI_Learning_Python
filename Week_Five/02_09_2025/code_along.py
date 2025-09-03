@@ -87,16 +87,14 @@
 
 # 2. class attributes - Shared by all objects of the class
 class Student:
-    university = "Federal University of agriculture,  Abeokuta."  
+    university = "Federal University of agriculture, Abeokuta."  
     
     def __init__(self, name, course):
         self.name = name         
         self.course = course
 
-
-student1 = Student("Anthony Johnson", "Engineering")
-student2 = Student("Fadilat Hassan", "Medicine")
-
 print(Student.university)     
-print(student1.university)   
-print(student2.university)  
+# print(student1.university)   
+# print(student2.university)
+
+#  Methods: The Actions (What Objcts CAN DO)
