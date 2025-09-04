@@ -86,15 +86,57 @@
 # print(student2.name) 
 
 # 2. class attributes - Shared by all objects of the class
-class Student:
-    university = "Federal University of agriculture, Abeokuta."  
+# class Student:
+#     university = "Federal University of agriculture, Abeokuta."  
     
-    def __init__(self, name, course):
-        self.name = name         
-        self.course = course
-
-print(Student.university)     
+#     def __init__(self, name, course):
+#         self.name = name         
+#         self.course = course
+# student1 = Student("Anthony Johnson", "Engineering")
+# student2 = Student("Fadilat Hassan", "Medicine" )
+# print(Student.university)     
 # print(student1.university)   
 # print(student2.university)
 
 #  Methods: The Actions (What Objcts CAN DO)
+class Student:
+    def __init__(self, name, course, level):
+        # Attributes
+        self.name = name
+        self.course = course
+        self.level = level
+        self.cgpa = 0.0
+        self.fees_paid = False
+    
+
+     # Method: action the student can do
+    def pay_school_fees(self):                   
+        self.fees_paid = True
+        return f"{self.name} has paid school fees for {self.level} level"
+    
+    # Method: another action
+    def register_courses(self):                   
+        if self.fees_paid:
+            return f"{self.name} has registered courses for {self.course}"
+        else:
+            return f"{self.name} must pay school fees first!"
+    
+      # Method: calculates CGPA
+    def calculate_cgpa(self, grades):           
+        if grades:
+            self.cgpa = sum(grades) / len(grades)
+            return f"{self.name}'s CGPA is now {self.cgpa:.2f}"
+        return "No grades provided"
+    
+# Using methods
+Abiodun = Student("Abiodun Akinola", "Gistology", 600)
+print(Abiodun.pay_school_fees())        
+print(Abiodun.register_courses())       
+print(Abiodun.calculate_cgpa([4.2, 3.8, 4.0, 3.5])) 
+
+# Types of Methods
+# 1. Instance Methods - Work with specific object data
+# 'self' refers to the specific student
+def pay_school_fees(self):  
+    return f"{self.name} has paid school fees"
+
