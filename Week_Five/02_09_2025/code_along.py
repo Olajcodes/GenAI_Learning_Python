@@ -86,8 +86,8 @@ print(student1.name)
 print(student2.name) 
 
 # 2. class attributes - Shared by all objects of the class
-# class Student:
-#     university = "Federal University of agriculture, Abeokuta."  
+class Student:
+    university = "Federal University of agriculture, Abeokuta."  
     
     def __init__(self, name, course):
         self.name = name         
