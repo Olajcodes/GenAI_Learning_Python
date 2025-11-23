@@ -58,6 +58,7 @@ def ask_bot(user_message: str) -> str:
     input_messages = [
         {"role": "system", "content": SYSTEM_PROMPT}] + chat_history
     
+    # Nice loading state (terminal mode)
     with yaspin(text="Bot thinking...", color="cyan"):
         response = client.responses.create(
         model=MODEL_NAME,
@@ -71,6 +72,10 @@ def ask_bot(user_message: str) -> str:
         
     # Update bot's answer to history
     chat_history.append({"role": "assistant", "content": answer})
+    
+    # Validate chat history
+    if len(chat_history) > MAX_HISTORY:
+        chat_history[:] = chat_history[-MAX_HISTORY:]
 
     return answer
 
